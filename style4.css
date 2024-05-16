@@ -1,1 +1,262 @@
+* {
+  margin: 0;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  
+  top: 0;
+  
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: black;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  width:70px ;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: none;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 80px;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+
+.main-container {
+  background-color:white;
+  min-height: calc(100vh - 50px);
+  color: black;
+}
+
+.content-container {
+  margin-left: 10px;
+}
+
+.featured-content {
+  height: 50vh;
+  padding: 0px;
+}
+
+.featured-title {
+  width: 1473px;
+  height: 50vh;
+}
+
+.movie-list-container {
+  padding: 0 0px;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 370px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 50px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 250px;
+  height: 300px;
+  object-fit:contain;
+}
+
+
+.movie-list-item-desc {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  padding: 20px;
+  color:white;
+  font-size: 25px;
+  text-align: left;
+  text-decoration: solid;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Roboto", sans-serif;
+}
+.caption {
+  font-style:normal;
+  color:black;
+  font-weight: bold;
+  text-shadow:white;
+  font-size: medium;
+  margin-right: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.footer {
+  width: 100%;
+  height: 62px;
+  background-color: black;
+  color: white;
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  padding: 0px;
+  text-align:center; /* Align the icons to the right */
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-left: 10px; /* Adjust the spacing between icons */
+}
+.site-title{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.feedback-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+button {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
