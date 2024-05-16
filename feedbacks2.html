@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet" />
+    <!--Icons (font awesome)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--CSS file-->
+    <link href="style4.css" rel="stylesheet" />
+    <title>feedbacks</title>
+</head>
+<body>
+     <!--Navbar-->
+     <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img class="logo" src="images2/wb logo.jpeg" alt="">
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="index.html">HOME</a></li>
+                    <li class="menu-list-item"><a href="movies2.html">MOVIES</a></li>
+                    <li class="menu-list-item"><a href="tvshows2.html">TV SHOWS</a></li>
+                    <li class="menu-list-item"><a href="games and apps2.html">GAMES AND APPS</a></li>
+                    <li class="menu-list-item"><a href="collections2.html">COLLECTIONS</a></li>
+                    <li class="menu-list-item"><a href="feedbacks2.html">FEEDBACKS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Feedback Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>2024 Warner Bros.Entertainment Inc. All Rights Reserved.</br>Follow us on</br>
+                <div class="social-icons">
+                    <i class="social-icons fa-brands fa-facebook"></i>
+                    <i class="social-icons fa-brands fa-twitter"></i>
+                    <i class="social-icons fa-brands fa-instagram"></i>
+                </div>
+            </p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
